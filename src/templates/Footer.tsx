@@ -49,7 +49,7 @@ const Footer = () => {
                                 </div>
                               ))}
                             </div>
-                            <div>
+                            <div className='flex flex-col items-center mt-7'>
 
                               {data?.map(item => (
                                 item.service_type !== 'contact' && 
@@ -72,10 +72,10 @@ const Footer = () => {
           </div>
                               
           </div>
-                  <div className='border-b-2 mx-10 my-8 border-b-border-bottom' />
-                  <div className="footer-copyright mx-auto text-center">
-                  © {t('copyright')} {new Date().getFullYear()} {AppConfig.title}
-                </div>
+          <div className='border-b-2 mx-10 my-8 border-b-border-bottom' />
+          <div className="footer-copyright mx-auto text-center">
+          © {t('copyright')} {new Date().getFullYear()} {AppConfig.title}
+          </div>
       </Section>
     </Background>
   )

@@ -18,11 +18,11 @@ const Partners = () => {
         <Section>
             <div className='partners pb-24'>
                 <h4 className='text-4xl text-center'>{t('our_parnters')}</h4>
-                <div className='flex justify-center gap-6 flex-wrap md:flex-nowrap pt-10'>
+                <div className='flex  justify-center items-start gap-6 flex-wrap  pt-10' >
                     {
                       !isError && !isLoading && 
                       data?.map(item => (
-                        <img key={item.partner_guid} src={`${MEDIA_URL}/partner/${item.image_name}`} alt={item.partner_name}/>
+                        <img style={{width: '200px', height: '140px', objectFit: 'fill'}} key={item.partner_guid} src={`${MEDIA_URL}/partner/${item.image_name}`} alt={item.partner_name}/>
                       ))
                     }
                 </div>
