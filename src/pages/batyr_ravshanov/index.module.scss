@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 6px;
+
+  .sub_container {
+    display: flex; 
+    justify-content: center; 
+    gap: 6px; 
+    flex-direction: column; 
+    margin: 5px 0; 
+  }
+}
