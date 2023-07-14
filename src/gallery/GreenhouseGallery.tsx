@@ -1,5 +1,4 @@
 import React from 'react' 
-import { useQuery } from 'react-query'
 import Image from 'next/image'
 import w1 from '../../public/assets/images/1.png'
 import w2 from '../../public/assets/images/2.png'
@@ -7,14 +6,8 @@ import w3 from '../../public/assets/images/3.png'
 import w4 from '../../public/assets/images/4.png'
 import w5 from '../../public/assets/images/5.png'
 import w6 from '../../public/assets/images/6.png'
-import { getWhData } from '../api/Queries/Getters'
 
 const GreenhouseGallery = () => {
-  const {
-    data
-  } = useQuery('getWhData', () => getWhData())
-
-  // console.log('data', data)
 
     return (
       <div className="flex flex-row justify-center flex-wrap">
