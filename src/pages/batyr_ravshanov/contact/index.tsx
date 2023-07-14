@@ -38,7 +38,7 @@ const ContactBatyr = () => {
               <Image src={logo} width={40} height={50}/>
             </div>
             <div className={styles.header_txt}>
-              <h1>Hilli gaplama</h1>
+              <h1>Hilli Group</h1>
             </div>
           </div>
 

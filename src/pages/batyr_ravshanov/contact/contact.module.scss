@@ -136,7 +136,6 @@
   position: relative;
 
   .header {
-    border: 1px solid red;
     background-color: #f54257;
     height: 28vh;
     display: flex;
@@ -144,6 +143,7 @@
     align-items: center;
     gap: 6px;
     color: #ffff;
+    margin-bottom: 19px;
 
     .header_txt h1 {
       font-size: 15px;
