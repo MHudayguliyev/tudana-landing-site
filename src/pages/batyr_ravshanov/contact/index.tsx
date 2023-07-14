@@ -3,12 +3,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import logo from '../../../../public/assets/images/logos.png'
 import ceo from '../../../../public/assets/images/ceo.jpg'
+import instagram from '../../../../public/assets/icons/instagram.png'
+import telegram from '../../../../public/assets/icons/telegram.png'
+import whatsApp from '../../../../public/assets/icons/whatsApp.png'
+
 
 // react icons 
-import {BsWhatsapp, BsInstagram,} from 'react-icons/bs'
+// import {BsWhatsapp, BsInstagram,} from 'react-icons/bs'
+// import {TbBrandTelegram} from 'react-icons/tb'
 import {BiPhoneCall} from 'react-icons/bi'
 import {RxEnvelopeOpen} from 'react-icons/rx'
-import {TbBrandTelegram} from 'react-icons/tb'
 import {CiGlobe, CiLocationOn} from 'react-icons/ci'
 import {RiUserAddLine} from 'react-icons/ri'
 
@@ -26,7 +30,7 @@ const ContactBatyr = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
 
       <Head>
         <title>Contact Batyr Ravshanov</title>
@@ -56,9 +60,9 @@ const ContactBatyr = () => {
           </div>
 
           <div className={styles.contact__icons}>
-              <a href='https://web.telegram.org/k/#929795384'><TbBrandTelegram size={30} /></a>
-              <a href='https://instagram.com/bravshanov1986?igshid=Y2IzZGU1MTFhOQ=='><BsInstagram size={30}/></a>
-              <a href='https://web.whatsapp.com/'><BsWhatsapp size={30}/></a>
+            <a href='https://web.telegram.org/k/#929795384'><Image src={telegram} width={40} height={40} /></a>
+            <a href='https://instagram.com/bravshanov1986?igshid=Y2IzZGU1MTFhOQ=='><Image src={instagram} width={40} height={40} /></a>
+            <a href='https://web.whatsapp.com' className={styles.whatsApp}><Image src={whatsApp} height={40} width={60} /></a>
           </div>
       </div>
 
@@ -98,7 +102,9 @@ const ContactBatyr = () => {
           </div>
           <div className={styles.icon_plus_content}>
             <div className={`${styles.icon} ${styles.specific_target}`}>
-                <CiLocationOn size={30}/>
+                <a href='https://www.google.com/maps/place/TUDANA/@37.9512001,58.4306312,21z/data=!4m20!1m13!4m12!1m4!2m2!1d58.4287506!2d37.9238172!4e1!1m6!1m2!1s0x3f6ffb2d18c63b37:0xd5291a583173133e!2sTUDANA!2m2!1d58.4307222!2d37.9512209!3m5!1s0x3f6ffb2d18c63b37:0xd5291a583173133e!8m2!3d37.9511651!4d58.4306751!16s%2Fg%2F11nmrm_f2m?entry=ttu'>
+                  <CiLocationOn size={30}/>
+                </a>
             </div>
             <div className={styles.content}>
               <h3>
@@ -115,12 +121,12 @@ const ContactBatyr = () => {
 
       </div>
 
-      <div className={styles.footer}>
+      <footer className={styles.footer}>
         <div className={styles.content} onClick={callCeo}>
           <RiUserAddLine size={30}/>
-          <span>Contact</span>
+          <span>Add Contact</span>
         </div>
-      </div>
+      </footer>
 
     </div>
   )

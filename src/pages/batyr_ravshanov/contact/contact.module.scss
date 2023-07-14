@@ -132,15 +132,20 @@
 
 
 ////////////// for desktop apps 
+
+.container {
+  min-height: 100vh;
+}
+
 .section1 {
   position: relative;
 
   .header {
     background-color: #f54257;
-    height: 28vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     gap: 6px;
     color: #ffff;
     margin-bottom: 19px;
@@ -149,13 +154,16 @@
       font-size: 15px;
       font-weight: 600;
       letter-spacing: 1px;
+      margin-top: 2vh;
     }
+
+  
   }
 
     .ceoImg__container{
       display: flex;
       justify-content: center;
-      margin-top: -75px;
+      margin-top: -59px;
     
       .ceo_img {
         border-radius: 10px;
@@ -164,7 +172,8 @@
 
       .ceo_name {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         gap: 1px;
         margin: 10px 0;
       h1, span {
@@ -182,24 +191,25 @@
       text-align: center;
       font-size: 15px;
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .contact__icons {
       display: flex;
       justify-content: center;
       padding: 10px;
-      gap: 12px
+      gap: 12px;
+
+      .whatsApp {
+        margin-left: -11px;
+      }
     }
 }
 
 
 .section2  {
   padding: 10px;
-  // border: 1px solid red;
+  height: 55vh;
 
-  // .sub__container {
-  //   border: 1px solid sienna;
-  // }
 
   .icon_plus_content {
     width: 30%;
@@ -243,12 +253,13 @@
 }
 
 .footer {
-  min-height: calc(100% - 60px);
   height: 60px;
   background-color: #f54257;
   color: #ffff;
-  position: sticky;
-  margin-bottom: 0;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
