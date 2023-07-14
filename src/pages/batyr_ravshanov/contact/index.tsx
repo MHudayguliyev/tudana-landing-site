@@ -33,7 +33,7 @@ const ContactBatyr = () => {
       </Head>
 
       <div className={styles.section1}>
-        <div className={styles.header}>
+          <div className={styles.header}>
             <div className={styles.logo}>
               <Image src={logo} width={40} height={50}/>
             </div>
@@ -65,45 +65,52 @@ const ContactBatyr = () => {
 
       <div className={styles.section2}>
 
-        <div className={styles.icon_plus_content}>
-          <div className={styles.icon}>
-            <BiPhoneCall size={30}/>
+        <div className={styles.sub__container}>
+
+
+          <div className={styles.icon_plus_content}>
+            <div className={styles.icon}>
+              <BiPhoneCall size={30}/>
+            </div>
+            <div className={styles.content}>
+              <h3 onClick={callCeo}>{ceoPhone}</h3>
+              <span>WhatsApp phone number</span>
+            </div>
+
           </div>
-          <div className={styles.content}>
-            <h3 onClick={callCeo}>{ceoPhone}</h3>
-            <span>WhatsApp phone number</span>
+          <div className={styles.icon_plus_content}>
+            <div className={styles.icon}>
+              <RxEnvelopeOpen size={30}/>
+            </div>
+            <div className={styles.content}>
+              <h3><a href={`https://mail.google.com/mail/?view=cm&to=${ceoEmail}&su=${encodeURIComponent("example")}`}>{ceoEmail}</a></h3>
+              <span>Email</span>
+            </div>    
+          </div>
+          <div className={styles.icon_plus_content}>
+            <div className={styles.icon}>
+                <CiGlobe size={30}/>
+            </div>
+            <div className={styles.content}>
+              <h3><a href='http://tudana.com.tm'>tudana.com.tm</a></h3>
+              <span>Official website</span>
+            </div>    
+          </div>
+          <div className={styles.icon_plus_content}>
+            <div className={`${styles.icon} ${styles.specific_target}`}>
+                <CiLocationOn size={30}/>
+            </div>
+            <div className={styles.content}>
+              <h3>
+                Ýylgaý D.street, building "Saher" <br></br> 
+                3rd floor, Ashgabat, Turkmenistan
+              </h3>
+              <span>Office</span>
+            </div>    
           </div>
 
-        </div>
-        <div className={styles.icon_plus_content}>
-          <div className={styles.icon}>
-            <RxEnvelopeOpen size={30}/>
-          </div>
-          <div className={styles.content}>
-            <h3><a href={`https://mail.google.com/mail/?view=cm&to=${ceoEmail}&su=${encodeURIComponent("example")}`}>{ceoEmail}</a></h3>
-            <span>Email</span>
-          </div>    
-        </div>
-        <div className={styles.icon_plus_content}>
-          <div className={styles.icon}>
-              <CiGlobe size={30}/>
-          </div>
-          <div className={styles.content}>
-            <h3><a href='http://tudana.com.tm'>tudana.com.tm</a></h3>
-            <span>Official website</span>
-          </div>    
-        </div>
-        <div className={styles.icon_plus_content}>
-          <div className={`${styles.icon} ${styles.specific_target}`}>
-              <CiLocationOn size={30}/>
-          </div>
-          <div className={styles.content}>
-            <h3>
-              Ýylgaý D.street, building "Saher" <br></br> 
-              3rd floor, Ashgabat, Turkmenistan
-            </h3>
-            <span>Office</span>
-          </div>    
+
+
         </div>
 
       </div>

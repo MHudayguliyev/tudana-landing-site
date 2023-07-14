@@ -1,8 +1,142 @@
+// .section1 {
+//   position: relative;
+
+
+//   .header {
+//     background-color: #f54257;
+//     height: 28vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 6px;
+//     color: #ffff;
+//     z-index: 999;
+//     margin-bottom: 15px;
+    
+//     .header_txt h1 {
+//       font-size: 15px;
+//       font-weight: 600;
+//       letter-spacing: 1px;
+//     }
+  
+//   }
+//   .ceoImg__container{
+//     display: flex;
+//     z-index: 1000;
+//     justify-content: center;
+//     margin-top: -17%;
+    
+//     .ceo_img {
+//       border-radius: 10px;
+//     }
+//   }
+  
+//   .ceo_name {
+//     display: flex;
+//     justify-content: center;
+//     gap: 1px;
+//     margin: 10px 0;
+//     h1, span {
+//       font-size: 19px;
+//     }
+//     h1 {
+//       font-weight: 600;
+//     }
+//     span {
+//       color: #808080;
+//     }
+//   }
+//   .job_name {
+//     text-align: center;
+//     font-size: 15px;
+//     font-weight: 600;
+//     margin-bottom: 20px;
+//   }
+//   .contact__icons {
+//     display: flex;
+//     justify-content: center;
+//     padding: 10px;
+//     gap: 12px
+//   }
+
+// }
+
+
+// .section2 {
+//   padding: 10px;
+//   // border: 1px solid green;
+
+//   .icon_plus_content {
+//     display: flex;
+//     // border: 1px solid red;d
+//     gap: 10px;
+
+//     .icon {
+//       padding: 10px;
+//       margin: auto 0;
+//       border: 1px solid #808080;
+//       border-radius: 5px;
+//       box-shadow:
+//       2.8px 2.8px 2.2px rgba(0, 0, 0, 0.008),
+//       6.7px 6.7px 5.3px rgba(0, 0, 0, 0.012),
+//       12.5px 12.5px 10px rgba(0, 0, 0, 0.015),
+//       22.3px 22.3px 17.9px rgba(0, 0, 0, 0.018),
+//       41.8px 41.8px 33.4px rgba(0, 0, 0, 0.022),
+//       100px 100px 80px rgba(0, 0, 0, 0.03);
+//     }
+    // .content {
+    //   padding: 3px;
+    //   margin-top: -1px;
+    //   h3 {
+    //     font-size: 15px;
+    //     font-weight: 600;
+    //     margin-top:10px;
+    //     cursor: pointer;
+    //   }
+    //   span {
+    //     color: #808080;
+    //   }
+    // }
+
+//   }
+
+// }
+
+// .footer {
+//   min-height: calc(100% - 60px);
+//   height: 60px;
+//   background-color: #f54257;
+//   color: #ffff;
+//   position: sticky;
+//   margin-bottom: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+
+  // .content {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 6px;
+  //   padding: 7px;
+  // }
+  // span {
+  //   font-size: 15px;
+  //   font-weight: 600;
+  //   letter-spacing: 0.5px;
+  // }
+// }
+
+
+
+
+////////////// for desktop apps 
 .section1 {
   position: relative;
 
-
   .header {
+    border: 1px solid red;
     background-color: #f54257;
     height: 28vh;
     display: flex;
@@ -10,67 +144,73 @@
     align-items: center;
     gap: 6px;
     color: #ffff;
-    z-index: 999;
-    margin-bottom: 15px;
-    
+
     .header_txt h1 {
       font-size: 15px;
       font-weight: 600;
       letter-spacing: 1px;
     }
-  
-  }
-  .ceoImg__container{
-    display: flex;
-    z-index: 1000;
-    justify-content: center;
-    margin-top: -17%;
-    
-    .ceo_img {
-      border-radius: 10px;
-    }
-  }
-  
-  .ceo_name {
-    display: flex;
-    justify-content: center;
-    gap: 1px;
-    margin: 10px 0;
-    h1, span {
-      font-size: 19px;
-    }
-    h1 {
-      font-weight: 600;
-    }
-    span {
-      color: #808080;
-    }
-  }
-  .job_name {
-    text-align: center;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  .contact__icons {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    gap: 12px
   }
 
+    .ceoImg__container{
+      display: flex;
+      justify-content: center;
+      margin-top: -75px;
+    
+      .ceo_img {
+        border-radius: 10px;
+      }
+    }
+
+      .ceo_name {
+        display: flex;
+        justify-content: center;
+        gap: 1px;
+        margin: 10px 0;
+      h1, span {
+        font-size: 19px;
+      }
+      h1 {
+        font-weight: 600;
+      }
+      span {
+        color: #808080;
+      }
+    }
+
+    .job_name {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .contact__icons {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      gap: 12px
+    }
 }
 
 
-.section2 {
+.section2  {
   padding: 10px;
-  // border: 1px solid green;
+  // border: 1px solid red;
+
+  // .sub__container {
+  //   border: 1px solid sienna;
+  // }
 
   .icon_plus_content {
+    width: 30%;
     display: flex;
-    // border: 1px solid red;d
+    margin: 0 auto;
     gap: 10px;
-
+    @media screen and (max-width: 1121px) {
+      width: 100%;
+      margin: 0;
+    }
+    
     .icon {
       padding: 10px;
       margin: auto 0;
@@ -84,6 +224,7 @@
       41.8px 41.8px 33.4px rgba(0, 0, 0, 0.022),
       100px 100px 80px rgba(0, 0, 0, 0.03);
     }
+
     .content {
       padding: 3px;
       margin-top: -1px;
@@ -99,7 +240,6 @@
     }
 
   }
-
 }
 
 .footer {
@@ -127,3 +267,5 @@
     letter-spacing: 0.5px;
   }
 }
+
+
