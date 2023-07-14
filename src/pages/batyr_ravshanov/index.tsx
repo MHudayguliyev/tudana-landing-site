@@ -7,6 +7,15 @@ import img2 from '../../../public/assets/images/BACK SIDE HILLI GROUP BC.png'
 
 
 const Logo = () => {
+
+  // const redirectToEmail = () => {
+  //   const recipient = 'hudayguliyevm@gmail.com';
+  //   const subject = 'Hello';
+  //   const body = 'This is the body of the email';
+
+  //   const mailtoLink = `https://mail.google.com/mail/?view=cm&to=${recipient}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  //   window.open(mailtoLink);
+  // };
   return (
 
     <div className={styles.container}>
