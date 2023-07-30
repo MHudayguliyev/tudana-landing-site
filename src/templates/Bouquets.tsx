@@ -41,7 +41,7 @@ const Bouquets = () => {
       let data = [...bouquetsData]
       for(let i = 0; i < data.length; i++){
         if(data[i]?.product_guid === data[i+1]?.product_guid){
-          data.splice(i, 1)
+          data.splice(i+1, 1)
         }
       }
       return data?.map(item => (
